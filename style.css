@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#game-canvas {
+    border: 2px solid #444;
+    background-color: #111;
+}
+
+.score-display, .high-score-display {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.score-display span, .high-score-display span {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+#game-over-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    z-index: 10;
+}
+
+#game-over-overlay h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #ff5252;
+}
+
+#game-over-overlay p {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+#game-over-overlay span {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+#retry-button {
+    margin-top: 2rem;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#retry-button:hover {
+    background-color: #45a049;
+}
+
+.hidden {
+    display: none !important;
+}
